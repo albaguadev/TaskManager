@@ -71,25 +71,29 @@ Upon execution, the following menu shall be displayed:
 --- Task Manager ---
 
 1. Add Task
-2. Delete Task
-3. Complete Task
-4. List Tasks
-5. Exit
+2. Add complex Task (with AI)
+3. Delete Task
+4. Complete Task
+5. List Tasks
+6. Exit
 ```
 
 #### Add Task (Option 1)
 A prompt shall request a task description. The task is then added to the list and persisted to storage.
 
-#### Delete Task (Option 2)
+#### Add complex Task (with AI) (Option 2)
+A prompt shall request a complex task description. The OpenAI API shall be utilised to decompose the task into 3-5 smaller, manageable subtasks. Each generated subtask shall be automatically added to the task list.
+
+#### Delete Task (Option 3)
 A prompt shall request the task ID to be deleted. The specified task shall be removed from the list.
 
-#### Complete Task (Option 3)
+#### Complete Task (Option 4)
 A prompt shall request the task ID to be marked as completed. The task status shall be updated accordingly.
 
-#### List Tasks (Option 4)
+#### List Tasks (Option 5)
 All tasks shall be displayed with their current status (Completed or Pending) and identifiers.
 
-#### Exit (Option 5)
+#### Exit (Option 6)
 The application shall be terminated.
 
 ## Project Structure
